@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohan Babu | The Best Lawyer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #222;
+    }
+
+    /* ===== HERO SECTION ===== */
+    .hero {
+      background-color: #EAE8E1;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 8vw, 6rem);
+      font-weight: 900;
+      letter-spacing: 0.05em;
+      line-height: 1.1;
+    }
+
+    .hero h1 .blur-word {
+      display: inline-block;
+      animation: blurIn 0.5s ease-out forwards;
+    }
+
+    @keyframes blurIn {
+      0% {
+        filter: blur(12px);
+        opacity: 0.6;
+      }
+      100% {
+        filter: blur(0);
+        opacity: 1;
+      }
+    }
+
+    /* ===== ABOUT US SECTION ===== */
+    .about {
+      padding: 80px 20px;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 50px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background-color: #FAFAFA;
+      border-radius: 2px;
+      padding: 50px 40px;
+      width: 280px;
+      border: 4px solid transparent;
+      transition: border 0.3s ease;
+      cursor: default;
+    }
+
+    .card:hover {
+      border: 24px solid #000;
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    /* ===== CONTACT US SECTION ===== */
+    .contact {
+      padding: 80px 20px;
+      background-color: #EAE8E1;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 50px;
+    }
+
+    .contact-list {
+      list-style: none;
+      max-width: 700px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .contact-item {
+      background: #fff;
+      border-radius: 2px;
+      padding: 20px 30px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      text-align: left;
+    }
+
+    .contact-item .label {
+      font-weight: 700;
+      min-width: 110px;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .contact-item a {
+      color: #222;
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    .contact-item a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>THE BEST<br><span class="blur-word">LAWYER</span></h1>
+  </section>
+
+  <!-- ABOUT US SECTION -->
+  <section class="about">
+    <h2>ABOUT US</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>100+ Cases Solved</h3>
+      </div>
+      <div class="card">
+        <h3>10+ Years</h3>
+      </div>
+      <div class="card">
+        <h3>Vizag Only</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT US SECTION -->
+  <section class="contact">
+    <h2>CONTACT US</h2>
+    <div class="contact-list">
+      <div class="contact-item">
+        <span class="label">Email</span>
+        <a href="mailto:mohanbabu.law@gmail.com">mohanbabu.law@gmail.com</a>
+      </div>
+      <div class="contact-item">
+        <span class="label">Phone</span>
+        <a href="tel:9494633699">9494633699</a>
+      </div>
+      <div class="contact-item">
+        <span class="label">TrueLawyer</span>
+        <a href="https://truelawyer.in/lawyer/k-n-v-s-y-g-mohan-babu" target="_blank">truelawyer.in</a>
+      </div>
+      <div class="contact-item">
+        <span class="label">JustDial</span>
+        <a href="https://www.justdial.com/Guntur/Chanakya-Law-Chambers-Tadepalle/9999PX863-X863-231128105411-U3S5_BZDET?srcterm=Chanakya%2520Law%2520Chambers&predocid=9999PX863.X863.140912144539.T5X1" target="_blank">justdial.com</a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
